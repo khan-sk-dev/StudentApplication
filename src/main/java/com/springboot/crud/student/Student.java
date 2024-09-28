@@ -1,6 +1,7 @@
 package com.springboot.crud.student;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,24 +9,32 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
+import lombok.ToString;
 
 @Entity
 @Table
+@ToString
 public class Student {
+	public Student() {
+		super();
+	}
+
 	@Id
 	@SequenceGenerator(name = "student_sequence", sequenceName = "student_sequence", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_sequence")
 	private Long id;
 	private String name;
 	private String email;
-	private Integer age;
 	private LocalDate dob;
+	@Transient
+	private Integer age;
 
-	public Student(String name, String email, int age, LocalDate dob) {
-		
+	public Student(String name, String email, LocalDate dob) {
+
 		this.name = name;
 		this.email = email;
-		this.age = age;
+
 		this.dob = dob;
 	}
 
@@ -54,7 +63,7 @@ public class Student {
 	}
 
 	public Integer getAge() {
-		return age;
+		return Period.between(this.dob, LocalDate.now()).getYears();
 	}
 
 	public void setAge(Integer age) {

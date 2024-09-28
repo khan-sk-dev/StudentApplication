@@ -1,6 +1,5 @@
 package com.springboot.crud.student;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,4 +18,9 @@ public class StudentService {
 	public List<Student> getStudents() {
 		return studentRepository.findAll();
 	}
+
+	public void addNewStudent(Student student) {
+		System.out.println(student);
+	}
+
 }
