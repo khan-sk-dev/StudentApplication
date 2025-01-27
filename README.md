@@ -28,7 +28,7 @@ A simple Spring Boot application to manage student records. The application allo
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/sohaibkhan-007/StudentApplication.git
+   git clone https://github.com/khan7071/StudentApplication.git
    ```
 
 2. **Navigate to the project directory**:
