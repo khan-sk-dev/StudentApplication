@@ -1,5 +1,3 @@
-```markdown
-<!-- Project Title and Badge -->
 # 🎓 StudentApplication
 
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-2.7.0-brightgreen?logo=spring-boot&logoColor=white)
@@ -9,22 +7,12 @@
 
 A simple and elegant Spring Boot application for managing student records with full CRUD capabilities via RESTful APIs.
 
----
-
-## 🖼️ Preview
-
-![Student Application Banner](https://raw.githubusercontent.com/khan-sk-dev/StudentApplication/main/assets/banner.png)
-
----
-
 ## 🚀 Features
 
 ✨ **Add a New Student** – Register with name, email, and DOB  
 📋 **View All Students** – Retrieve the list of all registered students  
 ✏️ **Update Student Info** – Edit a student's name and email  
 🗑️ **Delete a Student** – Remove a student from the system
-
----
 
 ## 🧰 Tech Stack
 
@@ -36,15 +24,11 @@ A simple and elegant Spring Boot application for managing student records with f
 | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql) | Relational Database           |
 | ![Maven](https://img.shields.io/badge/Maven-Build-orange?logo=apache-maven) | Dependency Management         |
 
----
-
 ## 📦 Prerequisites
 
 - ✅ Java 11 or higher  
 - ✅ PostgreSQL installed and running  
 - ✅ Maven installed  
-
----
 
 ## ⚙️ Setup Instructions
 
@@ -73,8 +57,6 @@ mvn spring-boot:run
 
 > 🚀 App runs on: `http://localhost:8081/`
 
----
-
 ## 🔌 REST API Endpoints
 
 | Method   | Endpoint                                           | Description                  |
@@ -83,8 +65,6 @@ mvn spring-boot:run
 | `POST`   | `/api/v1/student`                                  | Add a new student            |
 | `PUT`    | `/api/v1/student/{id}?name=NewName&email=NewEmail` | Update student details by ID |
 | `DELETE` | `/api/v1/student/{id}`                             | Delete a student by ID       |
-
----
 
 ## 📬 Sample API Calls
 
@@ -107,8 +87,6 @@ Content-Type: application/json
 PUT /api/v1/student/1?name=JaneDoe&email=jane.doe@example.com
 ```
 
----
-
 ## 🗃️ Folder Structure
 
 ```bash
@@ -126,15 +104,11 @@ StudentApplication
 └── README.md
 ```
 
----
-
 ## 📎 Useful Links
 
 * 📂 [Edit this README](https://github.com/khan-sk-dev/StudentApplication/edit/main/README.md)
 * 📖 [Spring Boot Documentation](https://spring.io/projects/spring-boot)
 * 🐘 [PostgreSQL Docs](https://www.postgresql.org/docs/)
-
----
 
 ## 📄 License
 
