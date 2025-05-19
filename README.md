@@ -1,4 +1,4 @@
-````markdown
+```markdown
 <!-- Project Title and Badge -->
 # 🎓 StudentApplication
 
